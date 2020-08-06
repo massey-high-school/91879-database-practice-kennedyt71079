@@ -36,7 +36,7 @@
             </div>    <!-- / logo -->
         </a>
             
-            <h1>Website Name</h1>
+            <h1>Nice Reading</h1>
         </div>    <!-- / banner -->
 
 
@@ -45,7 +45,15 @@
         
             Side bar / search goes here
             
-        </div>
+            <ol>
+                <li>List</li>
+                <li>Is</li>
+                <li>Now</li>
+                <li>Created</li>
+                <li>yo</li>
+            </ol>
+            
+        </div> <!-- / side bar -->
         
         <div class="box main">
             <h2>First Page heading</h2>
