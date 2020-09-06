@@ -2,7 +2,7 @@
 
 <html lang="en">
 
-    <?php
+<?php
 
     session_start();
     include("config.php");
@@ -17,6 +17,7 @@
         echo "Connection failed:".mysqli_connect_error();
         exit; 
     }
+    
 ?>
     
 <head>
@@ -59,7 +60,7 @@
         
         <div class="box side">
         
-            <h2>Search | <a class="side" href="showall.php">Show All</a></h2>
+            <h2>Search | <a class="side" href="show_all.php">Show All</a></h2>
             
             <i>Type part of the title / author name if desired</i>
             
