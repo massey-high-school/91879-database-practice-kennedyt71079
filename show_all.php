@@ -57,10 +57,10 @@ $count=mysqli_num_rows($showall_query);
             <p>Rating: <span class="sub_heading"><?php echo $showall_rs['Rating']; ?></span>
             </p>
             
-            <p><span class="sub_heading"><?php echo $showall_rs['Review']; ?></span></p>
+            <p><span class="sub_heading">Review</span></p>
             
             <p>
-                Review Placeholder
+                <?php echo $showall_rs['Review']; ?>
                 
             </p>
     
