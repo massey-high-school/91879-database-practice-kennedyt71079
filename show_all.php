@@ -28,6 +28,7 @@ $count=mysqli_num_rows($showall_query);
     <div class="error"
         Sorry! There are no results that match your search.
         Please use the search box in the sidebar to try again.
+         
     </div>
     
     <?php
@@ -41,33 +42,35 @@ $count=mysqli_num_rows($showall_query);
             
         ?>
     
-    <div class="results">
+    
+        <div class="results">
         
-            <p>Title: <span class="sub_heading">title holder</span>
+            <p>Title: <span class="sub_heading"><?php echo $showall_rs['Title']; ?></span>
             </p>
             
-            <p>Author: <span class="sub_heading">author holder</span>
+            <p>Author: <span class="sub_heading"><?php echo $showall_rs['Author']; ?></span>
             </p>
             
-            <p>Genre: <span class="sub_heading">genre holder</span>
+            <p>Genre: <span class="sub_heading"><?php echo $showall_rs['Genre']; ?></span>
             </p>
             
-            <p>Rating: <span class="sub_heading">rating holder</span>
+            <p>Rating: <span class="sub_heading"><?php echo $showall_rs['Rating']; ?></span>
             </p>
             
-            <p><span class="sub_heading">Review / Response</span></p>
+            <p><span class="sub_heading"><?php echo $showall_rs['Review']; ?></span></p>
             
             <p>
                 Review Placeholder
                 
             </p>
     
+            
     <?php
             
-        } // end of 'do'
+        } // end of do
         
         while($showall_rs=mysqli_fetch_assoc($showall_query));
-        
+            
     } // end else
     
     // if there are results, display them
@@ -81,4 +84,3 @@ $count=mysqli_num_rows($showall_query);
     include "bottombit.php";
 ?>
     
-    SHOW ALL PART 2 VIDEO
