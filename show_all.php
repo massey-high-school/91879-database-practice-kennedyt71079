@@ -77,6 +77,10 @@ $count=mysqli_num_rows($showall_query);
                 <?php echo $showall_rs['Review']; ?>
                 
             </p>
+            
+    </div> <!-- /end results div -->
+    
+    <br />
     
             
     <?php
