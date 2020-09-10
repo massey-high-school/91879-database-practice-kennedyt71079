@@ -133,9 +133,11 @@ a:hover{color: #000;}    /* Black*/
     padding: 5px;
 }
 
+/* form formatting */
 
-
-
+.search {
+    width: 200px;
+}
 
 
 
