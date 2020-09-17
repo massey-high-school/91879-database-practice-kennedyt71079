@@ -9,7 +9,7 @@
     
     <!-- Start of Title Search -->
     
-    <form method="post" actions="title_search.php" 
+    <form method="post" action="title_search.php" 
     enctype="multipart/form-data">
         
         <input class="search" type="text" name ="title" size="40" value=""
@@ -21,6 +21,22 @@
     </form>
     
     <!-- end of Title Search -->
+    
+        
+    <!-- Start of author Search -->
+    
+    <form method="post" action="author_search.php" 
+    enctype="multipart/form-data">
+        
+        <input class="search" type="text" name ="author" size="40" value=""
+        required placeholder="author..." />
+        
+        <input class="submit" type="submit" name="find_author"
+               value="Search"/>
+    
+    </form>
+    
+    <!-- end of author Search -->
     
     <hr />
     <!-- Start of Author Search -->
@@ -35,7 +51,8 @@
     Rating Search
     <!-- End of rating Search -->
     
-
+</div>  <!-- / side box -->
+    
 <div class="box footer">
     CC Troy Kennedy 2020
 </div>    <!-- / footer -->
