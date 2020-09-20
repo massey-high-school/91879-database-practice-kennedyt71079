@@ -23,16 +23,67 @@
     <!-- end of Title Search -->
     
     <hr />
-    <!-- Start of Author Search -->
-    Author Search <br />
-    <!-- end of Author Search -->
+        
+    <!-- Start of author Search -->
     
-    <!-- Start of Genre Search -->
-    Genre Search <br />
-    <!-- End of Genre Search-->
+    <form method="post" action="author_search.php" 
+    enctype="multipart/form-data">
+        
+        <input class="search" type="text" name ="author" size="40" value=""
+        required placeholder="Author..." />
+        
+        <input class="submit" type="submit" name="find_author"
+               value="Search"/>
+    
+    </form>
+    
+    <!-- end of author Search -->
+    
+    <br />
+    
+    <!-- Start of genre Search -->
+    
+    <form method="post" action="genre_search.php" 
+    enctype="multipart/form-data">
+        
+        <select name="genre" required>
+            <option value="" disabled selected>Genre...</option>
+            <option value="Sci Fi">Science Fiction</option>
+            <option value="Humour">Humour</option>
+            <option value="Historical Fiction">Historial Fiction</option>
+            <option value="Non Fiction">Non Fiction</option>
+        
+        </select>
+        
+        <input class="submit" type="submit" name="find_genre"
+               value="Search"/>
+    
+    </form>
+    
+    <!-- end of genre Search -->
+    
+    <br />
     
     <!-- Start of Rating Search -->
-    Rating Search
+    
+    <form method="post" action="rating_search.php"
+          enctype="multipart/form-data">...</form>
+        
+        <select class="half_width" name="amount">
+            <option value=1> selected>Exactly...</option>
+            <option value="more" selected>At least...</option>
+            <option value="less" selected>At most...</option>
+            <option value="exactly" selected>Exactly...</option>
+            <option value="more" selected>At least...</option>
+            <option value="less" selected>At most...</option>
+        </select>
+    
+        <select class="half_width" name="amount">
+            <option value="exactly" selected>Exactly...</option>
+            <option value="more" selected>At least...</option>
+            <option value="less" selected>At most...</option>
+        </select>
+    
     <!-- End of rating Search -->
     
 </div>  <!-- / side box -->
