@@ -67,22 +67,24 @@
     <!-- Start of Rating Search -->
     
     <form method="post" action="rating_search.php"
-          enctype="multipart/form-data">...</form>
+    enctype="multipart/form-data"></form>
         
         <select class="half_width" name="amount">
-            <option value=1> selected>Exactly...</option>
-            <option value="more" selected>At least...</option>
-            <option value="less" selected>At most...</option>
             <option value="exactly" selected>Exactly...</option>
             <option value="more" selected>At least...</option>
             <option value="less" selected>At most...</option>
         </select>
     
-        <select class="half_width" name="amount">
-            <option value="exactly" selected>Exactly...</option>
-            <option value="more" selected>At least...</option>
-            <option value="less" selected>At most...</option>
+        <select class="half_width" name="stars">
+            <option value=1>&#9733;</option>
+            <option value=2>&#9733;&#9733;</option>
+            <option value=3>&#9733;&#9733;&#9733;</option>
+            <option value=4>&#9733;&#9733;&#9733;&#9733;</option>
+            <option value=5>&#9733;&#9733;&#9733;&#9733;&#9733;</option>
         </select>
+    
+            <input type="submit" class="submit" name="find_rating"
+            value="Search" />
     
     <!-- End of rating Search -->
     
