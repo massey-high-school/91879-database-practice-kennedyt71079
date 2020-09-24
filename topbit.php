@@ -49,7 +49,8 @@
             
         <!-- logo image linking to home page goes here -->
         <a href="index.php">
-            <div class="box logo"  title="Logo - Click here to go to the Home Page">
+            <div class="box logo"  title="Home Page">
+            <img class="img-circle" src="images/books.jpg" width="150" height="150" alt="logo" />
             
             </div>    <!-- / logo -->
         </a>
